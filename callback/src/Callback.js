@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-function Callback({getcolour}) {
+function Callback({ getColor }) {
   const [activecolor, setActivecolor] = useState(null);
 
-    const handleChange = (e) => {
-        const { value } = e.target;
-        setActivecolor(value);
-        getcolour(value);
-    }
+  const handleChange = (e) => {
+    const { value } = e.target;
+    setActivecolor(value);
+    getColor(value);
+  };
   return (
     <div>
       Callback
